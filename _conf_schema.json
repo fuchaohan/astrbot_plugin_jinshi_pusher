@@ -1,0 +1,24 @@
+{
+  "target_id": {
+    "description": "接收消息的目标 ID (群号/频道/账号)",
+    "type": "string",
+    "default": "123456789"
+  },
+  "platform": {
+    "description": "消息适配器平台",
+    "type": "string",
+    "default": "aiocqhttp",
+    "options": ["aiocqhttp", "telegram", "satori", "dingtalk", "wechat"]
+  },
+  "interval": {
+    "description": "轮询间隔时间（秒）",
+    "type": "int",
+    "default": 60,
+    "hint": "建议设置在 60 秒以上，以免触发反爬封禁"
+  },
+  "enable_push": {
+    "description": "是否开启自动推送",
+    "type": "bool",
+    "default": true
+  }
+}
